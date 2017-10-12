@@ -1,7 +1,8 @@
 apply plugin: 'com.android.library'
 //添加这两行
 apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
+//发布到组织名称名字，必须填写
+group = "com.github.zylRookie"
 
 android {
     compileSdkVersion 26
@@ -34,11 +35,3 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-//项目主页
-def siteUrl = 'https://github.com/zylRookie/ZylRecycler'
-//项目的git地址
-def gitUrl = 'https://github.com/zylRookie/ZylRecycler.git'
-//发布到JCenter上的项目名字
-def libName = "ZylRecycler"
-//发布到组织名称名字，必须填写
-group = "com.github.zylRookie"
